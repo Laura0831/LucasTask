@@ -2,6 +2,8 @@ package com.laura.TaskTracker.Domain;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
@@ -19,4 +21,7 @@ public class Task {
 
     @Column(name = "title")
     private String description;
+
+    @Column(name = "due_Date")
+    private LocalDateTime dueDate;
 }
