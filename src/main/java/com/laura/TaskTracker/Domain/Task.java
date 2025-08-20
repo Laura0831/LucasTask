@@ -13,4 +13,10 @@ public class Task {
     //allows you to specify conditiones for the id (an id will never be updated or have a null value)
     @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
+
+    @Column(name = "title", nullable = false)
+    private String title;
+
+    @Column(name = "title")
+    private String description;
 }
