@@ -10,5 +10,7 @@ public class Task {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    //allows you to specify conditiones for the id (an id will never be updated or have a null value)
+    @Column(name = "id", updatable = false, nullable = false)
     private UUID id;
 }
