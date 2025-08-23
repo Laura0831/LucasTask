@@ -24,4 +24,10 @@ public class Task {
 
     @Column(name = "due_Date")
     private LocalDateTime dueDate;
+
+    @Column(name = "priority")
+    private TaskPriority priority;
+
+    @Column(name = "status", nullable = false)
+    private TaskStatus status;
 }
